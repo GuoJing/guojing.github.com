@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<!-- <html> -->
+<head>
+  <title>LIFE|GuoJing's Blog</title>
+  <meta charset="utf-8" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
+<link rel="icon" href="/images/icons/avatar.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/style/css/syntax.css" type="text/css" media="screen">
+<script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
+
+
+<link rel="stylesheet" href="/style/style.css" type="text/css">
+
+<script>
+$(document).ready(function(){
+    $('.nav a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+
+    $('.justtitle a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+</script>
+
+  <script type="text/javascript">
+        var BYB = {};
+  </script>
+  <script type="text/javascript">
+    BYB.includeScript = function(file,callback){
+    var _doc = document.getElementsByTagName('head')[0];
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', file);
+    _doc.appendChild(js);
+    
+    if (!/*@cc_on!@*/0) { //if not IE
+    //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+    js.onload = function () {
+    callback();
+    }
+    } else {
+    //IE6、IE7 support js.onreadystatechange
+    js.onreadystatechange = function () {
+    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+    callback();
+    }
+    }
+    }
+    return false;
+    }
+  </script>
+  <meta content="最近才把白日梦想家看了" name="description"/>
+  <meta content="白日,梦想家,记录,生活," name="keywords"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://guojing.me//posts/what-next-not-only-a-day-dreamer/" />
+  <meta property="og:title" content="LIFE" />
+  <meta property="og:description" content="最近才把白日梦想家看了" />
+</head>
+<body>
+
+
+<article id="main" itemscope itemtype="http://schema.org/Article">
+<div class="container">
+
+<div class="main clearfix">
+  <div class="title" itemprop="name">LIFE</div>
+  <div class="hidden" itemprop="author">GuoJing</div>
+  <div class="hidden" itemprop="description">最近才把白日梦想家看了</div>
+
+  <!--
+  <div class="info">
+      <i>Written 2016-05-23</i>
+  </div>
+-->
+
+  <div class="content blog_content_css" itemprop="articleBody">
+    <p>昨天在回京的火车上把好久之前就想看的一部电影《白日梦想家》（The Secret Life of Walter Mitty）看了。本身电影是还不错的，看完后感触倒是挺深的，似乎影射了我最近的生活状态。</p>
+
+<p>不过，LIFE 嘛，本来就是这样，每个人都希望在那么多选择中找一个适合自己的，或许当时也真正的做了符合当下的选择，但结果却不一定符合预期。所以有时候我会很迷茫，现在做的事情是否真的有价值，是否真的提升了自己，其实答案很容易找，可是要获得真正的认同，却是相当困难。</p>
+
+<p>所以事情这么多，这么麻烦，却不得不做，有时候会感叹，“啊啊，这就是人生嘛”。不过看到这部电影的最后一幕，依旧很感动。虽然最后经历了那么些回到现实，生活依旧没有什么改变，卖掉了钢琴，当众人面驳了上司却依旧还要重新开始。当然，是不是真的什么变化都没有呢？那倒不一定。</p>
+
+<blockquote>
+  <p>To see the world, things dangerous to come to,
+To see behind walls, to draw closer,
+To find each other and to feel,
+That is the Purpose of LIFE.</p>
+</blockquote>
+
+<p>So, Life is…</p>
+
+  </div>
+
+<!--   <hr>
+  <div class="eof">EOF</div>
+  <hr> -->
+
+<!--   <div class="forb">
+  
+  <a href="/tags/#白日">#白日</a>
+  
+  <a href="/tags/#梦想家">#梦想家</a>
+  
+  <a href="/tags/#记录">#记录</a>
+  
+  <a href="/tags/#生活">#生活</a>
+  
+  </div> -->
+
+<!--   <div class="suggest">
+    
+        <a href="/posts/garbage-and-math/" class="pre">&lt; 水货和数学</a>
+    
+    
+    
+        <a href="/posts/reading-books/" class="next">阅读 &gt;</a>
+    
+    </div> -->
+</div>
+</article>
+
+<!--
+<div class="comments blog_comments_css">
+<div id="disqus_container"> 
+    
+    <a href="#" class="comment" onclick="return false;">点击评论或查看评论。</a>
+        
+    <div id="disqus_thread"></div>
+</div>
+</div>
+-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#disqus_container .comment').on('click',function(){
+            $(this).html('加载中...');
+    var disqus_shortname = 'jguoer';
+            var that = this;
+            BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+        });
+});
+</script>
+</div>
+<div class="footer">
+<!--
+    Copyright GuoJing, Theme designed by GuoJing
+    Theme name Simple
+    If you love this theme, please keep my copyright and link to my blog.
+    If you DON'T LIKE it and you CAN remove the link. but not share spirit.
+    如果你喜欢这个博客构架和皮肤，请保留我作为原作者的权利，我会感谢你。
+    你也可以不保留我作为原作者的权利，自然没有任何问题，但似乎没有共享精神。
+-->
+<!-- © Copryright by<a href="http://guojing.me/" target="_blank">GuoJing</a> 2012-2014 using <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> -->
+
+<!--  -->
+<div>
+  --&gt; <a href="/archive">ret</a> &lt;--
+</div>
+
+<!--  -->
+</div>
+
+
+<!--
+  Copryright GuoJing 未经允许，严禁直接从Github上转载我的文章，所有文章遵循CC协议，允许复制和转载，但需要保留原作者链接。
+  该文章LIFE写于2016年05月23日。
+-->
+</body>
+</html>

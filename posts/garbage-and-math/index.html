@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<!-- <html> -->
+<head>
+  <title>水货和数学|GuoJing's Blog</title>
+  <meta charset="utf-8" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
+<link rel="icon" href="/images/icons/avatar.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/style/css/syntax.css" type="text/css" media="screen">
+<script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
+
+
+<link rel="stylesheet" href="/style/style.css" type="text/css">
+
+<script>
+$(document).ready(function(){
+    $('.nav a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+
+    $('.justtitle a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+</script>
+
+  <script type="text/javascript">
+        var BYB = {};
+  </script>
+  <script type="text/javascript">
+    BYB.includeScript = function(file,callback){
+    var _doc = document.getElementsByTagName('head')[0];
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', file);
+    _doc.appendChild(js);
+    
+    if (!/*@cc_on!@*/0) { //if not IE
+    //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+    js.onload = function () {
+    callback();
+    }
+    } else {
+    //IE6、IE7 support js.onreadystatechange
+    js.onreadystatechange = function () {
+    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+    callback();
+    }
+    }
+    }
+    return false;
+    }
+  </script>
+  <meta content="嗯嗯，对数学的一些反思" name="description"/>
+  <meta content="水货,数学,垃圾,math,算法," name="keywords"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://guojing.me//posts/garbage-and-math/" />
+  <meta property="og:title" content="水货和数学" />
+  <meta property="og:description" content="嗯嗯，对数学的一些反思" />
+</head>
+<body>
+
+
+<article id="main" itemscope itemtype="http://schema.org/Article">
+<div class="container">
+
+<div class="main clearfix">
+  <div class="title" itemprop="name">水货和数学</div>
+  <div class="hidden" itemprop="author">GuoJing</div>
+  <div class="hidden" itemprop="description">嗯嗯，对数学的一些反思</div>
+
+  <!--
+  <div class="info">
+      <i>Written 2016-04-17</i>
+  </div>
+-->
+
+  <div class="content blog_content_css" itemprop="articleBody">
+    <p>最近在看一些数学书，找到了一些奇怪的似曾相识的感觉。怎么说，并不是“啊啊，原来是这个意思”或者“这个算法原来是这样证明出来的”恍然大悟的感觉，而是一种，“哈哈，原来自己这么垃圾”和“大概再来一遍还是不会做”的感觉。</p>
+
+<p>这种感觉我记得从初中就有，很奇妙。小学的时候因为数学还可以被入选了奥数班，虽然可以简单的批判和归纳为教育的不纯粹，但回过头来来向，想必我自己本来也没有什么数学天赋。学校的数学对我而言就没有什么兴趣，只是刚好做到了上学的普通教科书要求简单的数学，就被老师丢到奥数班。现在想想，那可是双重伤害，其他的小朋友看上去都那么厉害，而题目又那么难，我只能在奥数书上画超级赛亚人了。</p>
+
+<p>现在来看，当时的我“奥数”和“奥术”并没有什么区别嘛。除此之外，还留下了很深的心理阴影。这种阴影也是最近才发现的<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>。</p>
+
+<p>最近看了一些计算机底层的基础书，感叹自己的算法知识太糟糕，还不能手动翻转二叉树<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>，就想要不把算法导论看了，没想到算法导论第一页就是各种指数、对数、和数的公式。勉勉强强跟着一起推导，才推导到40多页，就推导不下去了。每次深入下去，小学奥数那种感觉又出现了。“根本就不会嘛”，“一点思路都没有”然后开始了自我怀疑。</p>
+
+<p>当然，现在的能力比小学那是强太多了，要不然白读了这么些年，还枉费了这些年的工作。有不少题都坑坑巴巴的做出来了，还安慰自己和答案的意思差不多嘛（其实一点数学思维都没有）。和式递归式推导也慢慢拿起来，算是原来植入到大脑里一些莫名其妙的公式又被慢慢激活起来。</p>
+
+<p>好嘛，能做几道题，也算对得起自己，毕竟我只是计算机工程师嘛，不是科学家。不过想着重温基本数学-&gt;线性代数-&gt;概率统计-&gt;具体数学-&gt;数据结构和算法分析之后就能走上计算机编程<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>的不归路还是很激动。就算没什么用，以后也能举一反三想想更好的实现，做更好的选择。</p>
+
+<p>可是，每当拿起笔，看着题目 <strong>n个“&gt;”这样的折线能把平面切分成几份</strong> 的时候，那种莫名的情绪又上来了。“太无聊了，我根本就不会做嘛”，然后拿着笔毫无头绪的做了半个小时之后，一点感觉都没有。哎哎，这大概就是水货的意思吧。</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>还有另一件事印象特别深，小时候计算乘法余数会用手指头来数，并不是简单计算，但是被数学老师看到了，当着全班吐槽“有的同学”还有手指数数，到现在都不太敢用手指来计算，老师真是“灵魂的工程师”啊。 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>哈哈。 <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>啊啊，感觉自己现在只是搬砖。 <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+<!--   <hr>
+  <div class="eof">EOF</div>
+  <hr> -->
+
+<!--   <div class="forb">
+  
+  <a href="/tags/#水货">#水货</a>
+  
+  <a href="/tags/#数学">#数学</a>
+  
+  <a href="/tags/#垃圾">#垃圾</a>
+  
+  <a href="/tags/#math">#math</a>
+  
+  <a href="/tags/#算法">#算法</a>
+  
+  </div> -->
+
+<!--   <div class="suggest">
+    
+        <a href="/posts/new-year-of-2016/" class="pre">&lt; 2015</a>
+    
+    
+    
+        <a href="/posts/what-next-not-only-a-day-dreamer/" class="next">LIFE &gt;</a>
+    
+    </div> -->
+</div>
+</article>
+
+<!--
+<div class="comments blog_comments_css">
+<div id="disqus_container"> 
+    
+    <a href="#" class="comment" onclick="return false;">点击评论或查看评论。</a>
+        
+    <div id="disqus_thread"></div>
+</div>
+</div>
+-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#disqus_container .comment').on('click',function(){
+            $(this).html('加载中...');
+    var disqus_shortname = 'jguoer';
+            var that = this;
+            BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+        });
+});
+</script>
+</div>
+<div class="footer">
+<!--
+    Copyright GuoJing, Theme designed by GuoJing
+    Theme name Simple
+    If you love this theme, please keep my copyright and link to my blog.
+    If you DON'T LIKE it and you CAN remove the link. but not share spirit.
+    如果你喜欢这个博客构架和皮肤，请保留我作为原作者的权利，我会感谢你。
+    你也可以不保留我作为原作者的权利，自然没有任何问题，但似乎没有共享精神。
+-->
+<!-- © Copryright by<a href="http://guojing.me/" target="_blank">GuoJing</a> 2012-2014 using <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> -->
+
+<!--  -->
+<div>
+  --&gt; <a href="/archive">ret</a> &lt;--
+</div>
+
+<!--  -->
+</div>
+
+
+<!--
+  Copryright GuoJing 未经允许，严禁直接从Github上转载我的文章，所有文章遵循CC协议，允许复制和转载，但需要保留原作者链接。
+  该文章水货和数学写于2016年04月17日。
+-->
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<!-- <html> -->
+<head>
+  <title>Drunk|GuoJing's Blog</title>
+  <meta charset="utf-8" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
+<link rel="icon" href="/images/icons/avatar.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/style/css/syntax.css" type="text/css" media="screen">
+<script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
+
+
+<link rel="stylesheet" href="/style/style.css" type="text/css">
+
+<script>
+$(document).ready(function(){
+    $('.nav a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+
+    $('.justtitle a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+</script>
+
+  <script type="text/javascript">
+        var BYB = {};
+  </script>
+  <script type="text/javascript">
+    BYB.includeScript = function(file,callback){
+    var _doc = document.getElementsByTagName('head')[0];
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', file);
+    _doc.appendChild(js);
+    
+    if (!/*@cc_on!@*/0) { //if not IE
+    //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+    js.onload = function () {
+    callback();
+    }
+    } else {
+    //IE6、IE7 support js.onreadystatechange
+    js.onreadystatechange = function () {
+    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+    callback();
+    }
+    }
+    }
+    return false;
+    }
+  </script>
+  <meta content="有点喝醉了" name="description"/>
+  <meta content="life,code,drunk," name="keywords"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://guojing.me//posts/drunk/" />
+  <meta property="og:title" content="Drunk" />
+  <meta property="og:description" content="有点喝醉了" />
+</head>
+<body>
+
+
+<article id="main" itemscope itemtype="http://schema.org/Article">
+<div class="container">
+
+<div class="main clearfix">
+  <div class="title" itemprop="name">Drunk</div>
+  <div class="hidden" itemprop="author">GuoJing</div>
+  <div class="hidden" itemprop="description">有点喝醉了</div>
+
+  <!--
+  <div class="info">
+      <i>Written 2017-07-22</i>
+  </div>
+-->
+
+  <div class="content blog_content_css" itemprop="articleBody">
+    <p>晚上送一个朋友去美国，临走前大家一起吃一顿饭，吃得太快了（估计是饿坏了），三下五除二就吃完了。没办法，还想聊得更开心，于是就在附近找了一个酒吧喝酒。</p>
+
+<p>因为拆墙打洞，酒吧找了半天才找到，点完酒后有一句没一句得聊，聊的有点无聊。中间朋友说道年纪大了选择少了，突然挺感慨的。想到曾经我也是意气风发年亲气盛的样子，现在嘛，即不是为现实妥协，也不是被磨得圆滑，只是，有一种说不出来的空虚感，如果非要形容出来的话，那就是 empty。</p>
+
+<p>嗯。</p>
+
+<p>喝完饮料（对，我没喝酒）之后，开车回到家里，躺在床上，妻子给我准备了简单的梅子酒，特别甜，放了两个樱桃做装饰，随手就能拿起来喝，又冰又凉，特别爽口。</p>
+
+<p>“其实没什么可抱怨的”，抱着这样的心态，眯着眼睛睡着了。</p>
+
+  </div>
+
+<!--   <hr>
+  <div class="eof">EOF</div>
+  <hr> -->
+
+<!--   <div class="forb">
+  
+  <a href="/tags/#life">#life</a>
+  
+  <a href="/tags/#code">#code</a>
+  
+  <a href="/tags/#drunk">#drunk</a>
+  
+  </div> -->
+
+<!--   <div class="suggest">
+    
+        <a href="/posts/essays-from-a-computer-scientist-reading/" class="pre">&lt; 设计迷思</a>
+    
+    
+    
+        <a href="/posts/back-your-real-life/" class="next">到生活中去 &gt;</a>
+    
+    </div> -->
+</div>
+</article>
+
+<!--
+<div class="comments blog_comments_css">
+<div id="disqus_container"> 
+    
+    <a href="#" class="comment" onclick="return false;">点击评论或查看评论。</a>
+        
+    <div id="disqus_thread"></div>
+</div>
+</div>
+-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#disqus_container .comment').on('click',function(){
+            $(this).html('加载中...');
+    var disqus_shortname = 'jguoer';
+            var that = this;
+            BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+        });
+});
+</script>
+</div>
+<div class="footer">
+<!--
+    Copyright GuoJing, Theme designed by GuoJing
+    Theme name Simple
+    If you love this theme, please keep my copyright and link to my blog.
+    If you DON'T LIKE it and you CAN remove the link. but not share spirit.
+    如果你喜欢这个博客构架和皮肤，请保留我作为原作者的权利，我会感谢你。
+    你也可以不保留我作为原作者的权利，自然没有任何问题，但似乎没有共享精神。
+-->
+<!-- © Copryright by<a href="http://guojing.me/" target="_blank">GuoJing</a> 2012-2014 using <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> -->
+
+<!--  -->
+<div>
+  --&gt; <a href="/archive">ret</a> &lt;--
+</div>
+
+<!--  -->
+</div>
+
+
+<!--
+  Copryright GuoJing 未经允许，严禁直接从Github上转载我的文章，所有文章遵循CC协议，允许复制和转载，但需要保留原作者链接。
+  该文章Drunk写于2017年07月22日。
+-->
+</body>
+</html>
