@@ -40,6 +40,9 @@ function getURLParameter(name) {
 }
 </script>
 
+  <style>
+    body {background: #fbfbfb}
+  </style>
   <script type="text/javascript">
         var BYB = {};
   </script>
@@ -50,7 +53,7 @@ function getURLParameter(name) {
     js.setAttribute('type', 'text/javascript');
     js.setAttribute('src', file);
     _doc.appendChild(js);
-    
+
     if (!/*@cc_on!@*/0) { //if not IE
     //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
     js.onload = function () {
@@ -78,8 +81,18 @@ function getURLParameter(name) {
 
 
 <article id="main" itemscope itemtype="http://schema.org/Article">
+<div class="all">
+<div class="col-sm-12 title banner">
+<a href="/">GuoJing's Blog</a>
+<span class="item">
+    - <a href="/blog" style="font-size:12px">Posts (中文)</a>
+    - <a href="/about" style="font-size:12px">About</a>
+    - <a href="/subscribe" style="font-size:12px">Subscribe</a>
+    - <a href="http://guojingphotography.com/" style="font-size:12px" target="_blank">Portfolio</a>
+</span>
+</div>
+</div>
 <div class="container">
-
 <div class="main clearfix">
   <div class="title" itemprop="name">Simple is complicate</div>
   <div class="hidden" itemprop="author">GuoJing</div>
@@ -114,7 +127,7 @@ function getURLParameter(name) {
 
 <!--   <div class="suggest">
     
-    
+
     
     </div> -->
 </div>
@@ -122,10 +135,10 @@ function getURLParameter(name) {
 
 <!--
 <div class="comments _comments_css">
-<div id="disqus_container"> 
+<div id="disqus_container">
     
     <a href="#" class="comment" onclick="return false;">点击评论或查看评论。</a>
-        
+    
     <div id="disqus_thread"></div>
 </div>
 </div>
@@ -154,10 +167,12 @@ function getURLParameter(name) {
 <!-- © Copryright by<a href="http://guojing.me/" target="_blank">GuoJing</a> 2012-2014 using <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> -->
 
 <!--  -->
+<!--
 <div>
-<a href="/">ret</a>
+<a href="/" style="font-size:14px">返回</a>
 </div>
-
+-->
+<span style="font-size: 13px;">Copyright @GuoJing 2005-2018</span>
 <!--  -->
 </div>
 
